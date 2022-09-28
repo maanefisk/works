@@ -4,9 +4,59 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
   height: 30vh;
   width: 100vw;
+  overflow: hidden;
   box-sizing: border-box;
+  gap: 8px;
+}
+.header .darktogglecontainer {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.header .darktogglecontainer .darktoggle {
+  position: relative;
+  cursor: pointer;
+}
+.header .darktogglecontainer .darktoggle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 16px;
+  top: 0;
+  right: 0;
+  border: 2px solid lightseagreen;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+.header .darktogglecontainer .darktoggle:checked:before {
+  background-color: #FFFFFF;
+}
+.header .darktogglecontainer .darktoggle:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: lightseagreen;
+  position: absolute;
+  top: 5px;
+  right: 22px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.header .darktogglecontainer .darktoggle:checked:after {
+  right: 5px;
+}
+.header .superheader {
+  font-size: clamp(2.5rem, -0.875rem + 8.333vw, 3.5rem);
+}
+.header .supersubheader {
+  font-size: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
+  white-space: nowrap;
 }
 
 .navigationmenu {
@@ -19,6 +69,7 @@
 }
 .navigationmenu div {
   text-transform: capitalize;
+  font-size: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
   color: #5e0b25;
 }
 .navigationmenu div:hover {
@@ -41,7 +92,7 @@
   display: none;
   position: absolute;
   top: 15px;
-  left: 0;
+  right: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -66,6 +117,7 @@ body {
 
 * {
   font-family: "Outfit", Arial, sans-serif;
+  font-size: 16px;
 }
 
 .content {
@@ -79,57 +131,4 @@ h1 {
 }
 h1:hover {
   color: #942e4e;
-}
-
-input[type=checkbox] {
-  position: relative;
-  cursor: pointer;
-  transform: translate(1.5px, 1.5px);
-}
-
-input[type=checkbox]:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 32px;
-  height: 16px;
-  top: 0;
-  left: 0;
-  border: 2px solid lightseagreen;
-  border-radius: 3px;
-  background-color: #FFFFFF;
-  transition: all 0.3s ease;
-  transform: translate(-3px, -3px);
-}
-
-input[type=checkbox]:checked:before {
-  border-radius: 50%;
-  background-color: #FFFFFF;
-}
-
-input[type=checkbox]:after {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: lightseagreen;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  border-radius: 50%;
-  transform: translate(-3px, -3px);
-  transition: all 0.3s ease;
-}
-
-input[type=checkbox]:checked:after {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: lightseagreen;
-  position: absolute;
-  top: 5px;
-  left: 22px;
-  border-radius: 50%;
-  transform: translate(-3px, -3px);
 }/*# sourceMappingURL=style.css.map */

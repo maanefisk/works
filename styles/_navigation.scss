@@ -1,8 +1,63 @@
 .header {
     @include flexCenter(column);
+    position: relative;
     height: 30vh;
     width: 100vw;
+    overflow: hidden;
     box-sizing: border-box;
+    gap: 8px;
+
+    & .darktogglecontainer {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+
+        & .darktoggle {
+            position: relative;
+            cursor: pointer;
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 32px;
+                height: 16px;
+                top: 0;
+                right: 0;
+                border: 2px solid lightseagreen;
+                border-radius: 3px;
+                background-color: #FFFFFF;
+                transition: all 0.3s ease;
+            }
+            &:checked:before {
+                background-color: #FFFFFF;
+            }
+            &:after {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                background-color: lightseagreen;
+                position: absolute;
+                top: 5px;
+                right: 22px;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+            }
+            &:checked:after {
+                right: 5px;
+            }
+            
+        }
+    }
+
+    & .superheader {
+        font-size : clamp(2.5rem, -0.875rem + 8.333vw, 3.5rem);
+    }
+    & .supersubheader {
+        font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
+        white-space: nowrap;
+    }
 }
 .navigationmenu {
     @include flexCenter(row);
@@ -11,6 +66,7 @@
 
     div {
         text-transform: capitalize;
+        font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
         color: $primary;
 
         &:hover {
@@ -27,7 +83,7 @@
                 display: none;
                 position: absolute;
                 top: 15px;
-                left: 0;
+                right: 0;
                 height: fit-content;
                 width: fit-content;
                 border: 1px solid grey;
