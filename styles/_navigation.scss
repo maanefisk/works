@@ -28,7 +28,7 @@
                 height: 22px;
                 top: 0;
                 right: 0;
-                border: 2px solid lightseagreen;
+                border: 2px solid $primary;
                 border-radius: 16px;
                 background-color: #FFFFFF;
                 transform: translate(8px, -8px);
@@ -36,12 +36,13 @@
             }
             &:checked:before {
                 background-color: #FFFFFF;
+                border-color: $secondary;
             }
             &:after {
                 content: "\f185";
                 font-family: "Font Awesome 6 Free";
                 font-weight: 900;
-                color: lightseagreen;
+                color: $primary;
                 font-size: 10;
                 display: block;
                 width: 10px;
@@ -56,6 +57,7 @@
             &:checked:after {
                 content: "\f186";
                 right: 8px;
+                color: $secondary;
             }
             
         }
@@ -96,7 +98,7 @@
         font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
         color: $primary;
         font-weight: 300;
-        transition: 0.2s;
+        transition: 0.15s ease-out;
 
         &:hover {
             color: $secondary;
@@ -124,11 +126,13 @@
                 
             }
             & .togglearrow {
-                transition: transform 0.3s ease-out;
+                transition: transform 0.3s ease-out, color 0.15s ease-out;
+                color: $primary;
             }
             &:hover {
                 & .togglearrow {
                     transform: rotate(90deg);
+                    color: $secondary;
                 }
                 & .submenu {
                     display: flex;
