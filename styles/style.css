@@ -48,20 +48,17 @@ html[data-theme=dark] {
   height: 22px;
   top: 0;
   right: 0;
-  border: 2px solid var(--primarycolor);
+  border: 2px solid var(--secondarycolor);
   border-radius: 16px;
   background-color: var(--primarybg);
   transform: translate(8px, -8px);
   transition: all 0.3s ease;
 }
-.header .darktogglecontainer .darktoggle:checked:before {
-  border-color: var(--secondarycolor);
-}
 .header .darktogglecontainer .darktoggle:after {
   content: "\f185";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  color: var(--primarycolor);
+  color: var(--secondarycolor);
   font-size: 10;
   display: block;
   width: 10px;
@@ -76,7 +73,6 @@ html[data-theme=dark] {
 .header .darktogglecontainer .darktoggle:checked:after {
   content: "\f186";
   right: 8px;
-  color: var(--secondarycolor);
 }
 .header .superheader {
   font-size: clamp(2.5rem, -0.875rem + 8.333vw, 3.5rem);

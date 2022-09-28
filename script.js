@@ -16,3 +16,10 @@ let trans = () => {
     document.documentElement.classList.remove("transition");
   }, 1000);
 };
+
+function changepage(theclicked) {
+  var pagename = theclicked.innerText;
+  console.log(pagename);
+  model.page = pagename;
+  updateView();
+}

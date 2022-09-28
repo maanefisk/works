@@ -28,20 +28,20 @@
                 height: 22px;
                 top: 0;
                 right: 0;
-                border: 2px solid var(--primarycolor);
+                border: 2px solid var(--secondarycolor);
                 border-radius: 16px;
                 background-color: var(--primarybg);
                 transform: translate(8px, -8px);
                 transition: all 0.3s ease;
             }
             &:checked:before {
-                border-color: var(--secondarycolor);
+                
             }
             &:after {
                 content: "\f185";
                 font-family: "Font Awesome 6 Free";
                 font-weight: 900;
-                color: var(--primarycolor);
+                color: var(--secondarycolor);
                 font-size: 10;
                 display: block;
                 width: 10px;
@@ -56,7 +56,6 @@
             &:checked:after {
                 content: "\f186";
                 right: 8px;
-                color: var(--secondarycolor);
             }
             
         }
