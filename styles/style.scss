@@ -16,8 +16,15 @@ body {
     height: 100vh;
     width: 100vw;
     background: var(--secondarybg);
-    padding-top: 30vh;
     box-sizing: border-box;
+    padding: 9vh 20vh 2vh;
+    overflow-y: auto;
+}
+.cvcontent {
+    width: 100%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
 }
 html.transition,
 html.transition *,
