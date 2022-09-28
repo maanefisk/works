@@ -2,18 +2,19 @@
     @include flexCenter(column);
     justify-content: space-between;
     position: absolute;
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
     top: 0;
     left: 0;
     background: #FFFFFF;
     box-sizing: border-box;
-    transition: 0.6s ease-out;
+    transition: height 0.6s ease-out;
+    box-shadow:  5px 5px 10px rgba(190, 190, 190, 0.3);
 
     & .darktogglecontainer {
         position: absolute;
-        top: 8px;
-        right: 8px;
+        top: 16px;
+        right: 16px;
 
         & .darktoggle {
             position: relative;
@@ -24,31 +25,37 @@
                 display: block;
                 position: absolute;
                 width: 32px;
-                height: 16px;
+                height: 22px;
                 top: 0;
                 right: 0;
                 border: 2px solid lightseagreen;
-                border-radius: 3px;
+                border-radius: 16px;
                 background-color: #FFFFFF;
+                transform: translate(8px, -8px);
                 transition: all 0.3s ease;
             }
             &:checked:before {
                 background-color: #FFFFFF;
             }
             &:after {
-                content: "";
+                content: "\f185";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                color: lightseagreen;
+                font-size: 10;
                 display: block;
                 width: 10px;
                 height: 10px;
-                background-color: lightseagreen;
                 position: absolute;
                 top: 5px;
                 right: 22px;
                 border-radius: 50%;
                 transition: all 0.3s ease;
+                transform: translate(8px, -8px);
             }
             &:checked:after {
-                right: 5px;
+                content: "\f186";
+                right: 8px;
             }
             
         }
@@ -56,10 +63,12 @@
 
     & .superheader {
         font-size : clamp(2.5rem, -0.875rem + 8.333vw, 3.5rem);
+        font-weight: 600;
     }
     & .supersubheader {
         font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
         white-space: nowrap;
+        font-weight: 200;
     }
     & .headertext {
         overflow: hidden;  /* Hide the element content, while height = 0 */
@@ -86,10 +95,13 @@
     div {
         font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
         color: $primary;
+        font-weight: 300;
+        transition: 0.2s;
 
         &:hover {
             color: $secondary;
             cursor: pointer;
+            transform: scale(1.1);
         }
         &.hassubmenu {
             @include flexCenter(row);
@@ -108,8 +120,11 @@
                 padding: 8px 16px;
                 margin-top: calc(0.21rem + 0.19vw);
                 white-space: nowrap;
-                box-shadow:  5px 5px 10px #bebebe;
+                box-shadow:  5px 5px 10px rgba(190, 190, 190, 0.3);
                 
+            }
+            & .togglearrow {
+                transition: transform 0.3s ease-out;
             }
             &:hover {
                 & .togglearrow {
