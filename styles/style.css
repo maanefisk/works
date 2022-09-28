@@ -6,7 +6,6 @@
   height: 30vh;
   width: 100vw;
   box-sizing: border-box;
-  border: 1px solid grey;
 }
 
 .navigationmenu {
@@ -16,6 +15,14 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
+}
+.navigationmenu div {
+  text-transform: capitalize;
+  color: #5e0b25;
+}
+.navigationmenu div:hover {
+  color: #942e4e;
+  cursor: pointer;
 }
 
 /* wrighting a comment */

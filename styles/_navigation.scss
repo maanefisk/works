@@ -3,10 +3,19 @@
     height: 30vh;
     width: 100vw;
     box-sizing: border-box;
-    border: 1px solid grey;
 }
 .navigationmenu {
     @include flexCenter(row);
     width: 100%;
     justify-content: space-evenly;
+
+    div {
+        text-transform: capitalize;
+        color: $primary;
+
+        &:hover {
+            color: $secondary;
+            cursor: pointer;
+        }
+    }
 }
