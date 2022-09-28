@@ -1,7 +1,12 @@
-div {
-    @include flexCenter();
-    
-    height: 20%;
+.header {
+    @include flexCenter(row);
+    height: 30vh;
+    width: 100vw;
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+.navigationmenu {
+    @include flexCenter(row);
     width: 100%;
-    border: 3px solid $primary;
+    justify-content: space-evenly;
 }

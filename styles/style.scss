@@ -2,6 +2,16 @@
 @import "./mixins";
 @import "./navigation";
 
+// use @extend h1; inside tag to include another ones style
+/* wrighting a comment */
+body {
+    margin: 0;
+}
+.content {
+    height: 70vh;
+    width: 100vw;
+    background: #bebebe;
+}
 h1 {
     color: $primary;
     &:hover {
