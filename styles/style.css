@@ -4,12 +4,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
   height: 30vh;
   width: 100vw;
-  overflow: hidden;
   box-sizing: border-box;
-  gap: 8px;
 }
 .header .darktogglecontainer {
   position: absolute;
@@ -68,7 +67,6 @@
   justify-content: space-evenly;
 }
 .navigationmenu div {
-  text-transform: capitalize;
   font-size: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
   color: #5e0b25;
 }
@@ -91,7 +89,7 @@
   flex-direction: column;
   display: none;
   position: absolute;
-  top: 15px;
+  top: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
   right: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -99,8 +97,9 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border: 1px solid grey;
+  background: white;
   padding: 8px;
+  margin-top: calc(0.21rem + 0.19vw);
   white-space: nowrap;
 }
 .navigationmenu div.hassubmenu:hover .togglearrow {

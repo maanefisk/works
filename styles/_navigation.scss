@@ -1,11 +1,10 @@
 .header {
     @include flexCenter(column);
+    justify-content: space-between;
     position: relative;
     height: 30vh;
     width: 100vw;
-    overflow: hidden;
     box-sizing: border-box;
-    gap: 8px;
 
     & .darktogglecontainer {
         position: absolute;
@@ -65,7 +64,6 @@
     justify-content: space-evenly;
 
     div {
-        text-transform: capitalize;
         font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
         color: $primary;
 
@@ -82,12 +80,13 @@
                 @include flexCenter(column);
                 display: none;
                 position: absolute;
-                top: 15px;
+                top: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
                 right: 0;
                 height: fit-content;
                 width: fit-content;
-                border: 1px solid grey;
+                background: white;
                 padding: 8px;
+                margin-top: calc(0.21rem + 0.19vw);
                 white-space: nowrap;
                 
             }
