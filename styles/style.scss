@@ -23,8 +23,17 @@ body {
 .cvcontent {
     width: 100%;
     border: 1px solid grey;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
+}
+.personalia {
+    flex-grow: 2;
+}
+.cvimage {
+    height: 357.5px;
+    width: 250px;
+
 }
 html.transition,
 html.transition *,
