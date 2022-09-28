@@ -1,2 +1,14 @@
-$primary: #740025;
-$secondary: #ff0051;
+html {
+    --primarycolor: #2b000d;
+    --secondarycolor: #ff0051;
+    --extracolor: #ff6898;
+    --primarybg: #FFFFFF;
+    --secondarybg: #bebebe;
+}
+html[data-theme='dark'] {
+    --primarycolor: #D4FFF2;
+    --secondarycolor: #00FFAE;
+    --extracolor: #009767;
+    --primarybg: #000000;
+    --secondarybg: #414141;
+}

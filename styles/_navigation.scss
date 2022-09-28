@@ -6,7 +6,7 @@
     width: 100vw;
     top: 0;
     left: 0;
-    background: #FFFFFF;
+    background: var(--primarybg);
     box-sizing: border-box;
     transition: height 0.6s ease-out;
     box-shadow:  5px 5px 10px rgba(190, 190, 190, 0.3);
@@ -28,7 +28,7 @@
                 height: 22px;
                 top: 0;
                 right: 0;
-                border: 2px solid $primary;
+                border: 2px solid var(--primarycolor);
                 border-radius: 16px;
                 background-color: #FFFFFF;
                 transform: translate(8px, -8px);
@@ -36,13 +36,13 @@
             }
             &:checked:before {
                 background-color: #FFFFFF;
-                border-color: $secondary;
+                border-color: var(--secondarycolor);
             }
             &:after {
                 content: "\f185";
                 font-family: "Font Awesome 6 Free";
                 font-weight: 900;
-                color: $primary;
+                color: var(--primarycolor);
                 font-size: 10;
                 display: block;
                 width: 10px;
@@ -57,7 +57,7 @@
             &:checked:after {
                 content: "\f186";
                 right: 8px;
-                color: $secondary;
+                color: var(--secondarycolor);
             }
             
         }
@@ -96,12 +96,12 @@
 
     div {
         font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
-        color: $primary;
+        color: var(--primarycolor);
         font-weight: 300;
         transition: 0.15s ease-out;
 
         &:hover {
-            color: $secondary;
+            color: var(--secondarycolor);
             cursor: pointer;
             transform: scale(1.1);
         }
@@ -127,12 +127,12 @@
             }
             & .togglearrow {
                 transition: transform 0.3s ease-out, color 0.15s ease-out;
-                color: $primary;
+                color: var(--primarycolor);
             }
             &:hover {
                 & .togglearrow {
                     transform: rotate(90deg);
-                    color: $secondary;
+                    color: var(--secondarycolor);
                 }
                 & .submenu {
                     display: flex;

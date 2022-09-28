@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  --primarycolor: #2b000d;
+  --secondarycolor: #ff0051;
+  --extracolor: #ff6898;
+  --primarybg: #FFFFFF;
+  --secondarybg: #bebebe;
+}
+
+html[data-theme=dark] {
+  --primarycolor: #D4FFF2;
+  --secondarycolor: #00FFAE;
+  --extracolor: #009767;
+  --primarybg: #000000;
+  --secondarybg: #414141;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -10,7 +26,7 @@
   width: 100vw;
   top: 0;
   left: 0;
-  background: #FFFFFF;
+  background: var(--primarybg);
   box-sizing: border-box;
   transition: height 0.6s ease-out;
   box-shadow: 5px 5px 10px rgba(190, 190, 190, 0.3);
@@ -32,7 +48,7 @@
   height: 22px;
   top: 0;
   right: 0;
-  border: 2px solid #740025;
+  border: 2px solid var(--primarycolor);
   border-radius: 16px;
   background-color: #FFFFFF;
   transform: translate(8px, -8px);
@@ -40,13 +56,13 @@
 }
 .header .darktogglecontainer .darktoggle:checked:before {
   background-color: #FFFFFF;
-  border-color: #ff0051;
+  border-color: var(--secondarycolor);
 }
 .header .darktogglecontainer .darktoggle:after {
   content: "\f185";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  color: #740025;
+  color: var(--primarycolor);
   font-size: 10;
   display: block;
   width: 10px;
@@ -61,7 +77,7 @@
 .header .darktogglecontainer .darktoggle:checked:after {
   content: "\f186";
   right: 8px;
-  color: #ff0051;
+  color: var(--secondarycolor);
 }
 .header .superheader {
   font-size: clamp(2.5rem, -0.875rem + 8.333vw, 3.5rem);
@@ -98,12 +114,12 @@
 }
 .navigationmenu div {
   font-size: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
-  color: #740025;
+  color: var(--primarycolor);
   font-weight: 300;
   transition: 0.15s ease-out;
 }
 .navigationmenu div:hover {
-  color: #ff0051;
+  color: var(--secondarycolor);
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -138,11 +154,11 @@
 }
 .navigationmenu div.hassubmenu .togglearrow {
   transition: transform 0.3s ease-out, color 0.15s ease-out;
-  color: #740025;
+  color: var(--primarycolor);
 }
 .navigationmenu div.hassubmenu:hover .togglearrow {
   transform: rotate(90deg);
-  color: #ff0051;
+  color: var(--secondarycolor);
 }
 .navigationmenu div.hassubmenu:hover .submenu {
   display: flex;
@@ -161,12 +177,13 @@ body {
 .content {
   height: 100vh;
   width: 100vw;
-  background: #bebebe;
+  background: var(--secondarybg);
 }
 
-h1 {
-  color: #740025;
-}
-h1:hover {
-  color: #ff0051;
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }/*# sourceMappingURL=style.css.map */
