@@ -1,5 +1,5 @@
 .header {
-    @include flexCenter(row);
+    @include flexCenter(column);
     height: 30vh;
     width: 100vw;
     box-sizing: border-box;
@@ -16,6 +16,34 @@
         &:hover {
             color: $secondary;
             cursor: pointer;
+        }
+        &.hassubmenu {
+            @include flexCenter(row);
+            gap: 8px;
+            position: relative;
+
+            & .submenu {
+                @include flexCenter(column);
+                display: none;
+                position: absolute;
+                top: 15px;
+                left: 0;
+                height: fit-content;
+                width: fit-content;
+                border: 1px solid grey;
+                padding: 8px;
+                white-space: nowrap;
+                
+            }
+            &:hover {
+                & .togglearrow {
+                    transform: rotate(90deg);
+                }
+                & .submenu {
+                    display: flex;
+                }
+            }
+
         }
     }
 }

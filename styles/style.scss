@@ -1,11 +1,15 @@
 @import "./colorpalette";
 @import "./mixins";
 @import "./navigation";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 // use @extend h1; inside tag to include another ones style
 /* wrighting a comment */
 body {
     margin: 0;
+}
+* {
+    font-family: 'Outfit', Arial, sans-serif;
 }
 .content {
     height: 70vh;
@@ -17,4 +21,53 @@ h1 {
     &:hover {
         color: $secondary;
     }
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    transform: translate(1.5px, 1.5px);
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid lightseagreen;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease;
+    transform: translate(-3px, -3px);
+}
+input[type=checkbox]:checked:before {
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+input[type=checkbox]:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: lightseagreen;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    transform: translate(-3px,-3px);
+    transition: all 0.3s ease;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: lightseagreen;
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    border-radius: 50%;
+    transform: translate(-3px,-3px);
 }
