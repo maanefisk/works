@@ -1,10 +1,14 @@
 .header {
     @include flexCenter(column);
     justify-content: space-between;
-    position: relative;
-    height: 30vh;
+    position: absolute;
+    height: 10vh;
     width: 100vw;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
     box-sizing: border-box;
+    transition: 0.6s ease-out;
 
     & .darktogglecontainer {
         position: absolute;
@@ -57,11 +61,27 @@
         font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
         white-space: nowrap;
     }
+    & .headertext {
+        overflow: hidden;  /* Hide the element content, while height = 0 */
+        height: 0;
+        opacity: 0;
+        transition: all 0s;
+    }
+
+    &:hover {
+        height: 30vh;
+        & .headertext {
+            height: auto; 
+            opacity: 1;
+            transition: height 0ms 0.5s, opacity 0.6s 0.5s;
+        }
+    }
 }
 .navigationmenu {
     @include flexCenter(row);
     width: 100%;
     justify-content: space-evenly;
+    padding-bottom: 8px;
 
     div {
         font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
@@ -85,9 +105,10 @@
                 height: fit-content;
                 width: fit-content;
                 background: white;
-                padding: 8px;
+                padding: 8px 16px;
                 margin-top: calc(0.21rem + 0.19vw);
                 white-space: nowrap;
+                box-shadow:  5px 5px 10px #bebebe;
                 
             }
             &:hover {
