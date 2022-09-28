@@ -1,0 +1,7 @@
+div {
+    @include flexCenter();
+    
+    height: 20%;
+    width: 100%;
+    border: 3px solid $primary;
+}

@@ -1,0 +1,10 @@
+@import "./colorpalette";
+@import "./mixins";
+@import "./navigation";
+
+h1 {
+    color: $primary;
+    &:hover {
+        color: $secondary;
+    }
+}
