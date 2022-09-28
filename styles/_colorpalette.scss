@@ -1,14 +1,14 @@
 html {
     --primarycolor: #2b000d;
     --secondarycolor: #ff0051;
-    --extracolor: #ff6898;
     --primarybg: #FFFFFF;
     --secondarybg: #bebebe;
+    --boxshadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 html[data-theme='dark'] {
-    --primarycolor: #D4FFF2;
+    --primarycolor: #FFFFFF;
     --secondarycolor: #00FFAE;
-    --extracolor: #009767;
-    --primarybg: #000000;
-    --secondarybg: #414141;
+    --primarybg: #414141;
+    --secondarybg: #1a1a1a;
+    box-shadow: none;
 }

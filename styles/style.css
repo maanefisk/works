@@ -2,17 +2,17 @@
 html {
   --primarycolor: #2b000d;
   --secondarycolor: #ff0051;
-  --extracolor: #ff6898;
   --primarybg: #FFFFFF;
   --secondarybg: #bebebe;
+  --boxshadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 html[data-theme=dark] {
-  --primarycolor: #D4FFF2;
+  --primarycolor: #FFFFFF;
   --secondarycolor: #00FFAE;
-  --extracolor: #009767;
-  --primarybg: #000000;
-  --secondarybg: #414141;
+  --primarybg: #414141;
+  --secondarybg: #1a1a1a;
+  box-shadow: none;
 }
 
 .header {
@@ -29,7 +29,7 @@ html[data-theme=dark] {
   background: var(--primarybg);
   box-sizing: border-box;
   transition: height 0.6s ease-out;
-  box-shadow: 5px 5px 10px rgba(190, 190, 190, 0.3);
+  box-shadow: var(--boxshadow);
 }
 .header .darktogglecontainer {
   position: absolute;
@@ -50,12 +50,11 @@ html[data-theme=dark] {
   right: 0;
   border: 2px solid var(--primarycolor);
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: var(--primarybg);
   transform: translate(8px, -8px);
   transition: all 0.3s ease;
 }
 .header .darktogglecontainer .darktoggle:checked:before {
-  background-color: #FFFFFF;
   border-color: var(--secondarycolor);
 }
 .header .darktogglecontainer .darktoggle:after {
@@ -93,6 +92,7 @@ html[data-theme=dark] {
   height: 0;
   opacity: 0;
   transition: all 0s;
+  color: var(--primarycolor);
 }
 .header:hover {
   height: 30vh;
@@ -146,11 +146,11 @@ html[data-theme=dark] {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background: white;
+  background: var(--primarybg);
   padding: 8px 16px;
   margin-top: calc(0.21rem + 0.19vw);
   white-space: nowrap;
-  box-shadow: 5px 5px 10px rgba(190, 190, 190, 0.3);
+  box-shadow: var(--boxshadow);
 }
 .navigationmenu div.hassubmenu .togglearrow {
   transition: transform 0.3s ease-out, color 0.15s ease-out;
