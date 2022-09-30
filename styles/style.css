@@ -244,7 +244,7 @@ body {
   width: 50%;
   padding: 3vw 5vw 4vw;
   box-sizing: border-box;
-  border-bottom-left-radius: 16px;
+  border-bottom-left-radius: 4px;
 }
 
 .imagecontainer {
@@ -252,7 +252,7 @@ body {
   width: 50%;
   padding: 3vw 5vw 4vw;
   box-sizing: border-box;
-  border-bottom-right-radius: 16px;
+  border-bottom-right-radius: 4px;
 }
 
 .cvimage {
@@ -268,7 +268,7 @@ body {
   padding: 3vw 5vw 4vw;
   margin-top: 3vh;
   box-sizing: border-box;
-  border-radius: 16px;
+  border-radius: 4px;
 }
 .experienceandcompetences.education {
   background: var(--color7);
@@ -339,7 +339,7 @@ body {
   .personalia {
     width: 100%;
     order: 2;
-    border-radius: 16px;
+    border-radius: 4px;
   }
   .experienceandcompetences {
     order: 3;
