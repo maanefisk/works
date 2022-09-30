@@ -161,6 +161,7 @@ html[data-theme=dark] {
 }
 
 /* wrighting a comment */
+/* shift alt a */
 body {
   margin: 0;
 }
@@ -170,12 +171,32 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  font-size: clamp(0.76rem + 20px, -0.136rem + 3.205vw + 20px, 1.14rem + 20px);
+}
+
+h2 {
+  font-size: clamp(0.76rem + 15px, -0.136rem + 3.205vw + 15px, 1.14rem + 15px);
+}
+
+h3 {
+  font-size: clamp(0.76rem + 10px, -0.136rem + 3.205vw + 10px, 1.14rem + 10px);
+}
+
+h4 {
+  font-size: clamp(0.76rem + 5px, -0.136rem + 3.205vw + 5px, 1.14rem + 5px);
+}
+
+p, b {
+  font-size: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
+}
+
 .content {
   height: 100vh;
   width: 100vw;
   background: var(--secondarybg);
   box-sizing: border-box;
-  padding: 9vh 20vh 2vh;
+  padding: 9vh 21vw 2vh;
   overflow-y: auto;
 }
 
@@ -185,17 +206,46 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .personalia {
-  flex-grow: 2;
+  width: 60%;
+}
+
+.imagecontainer {
+  width: 40%;
 }
 
 .cvimage {
-  height: 357.5px;
-  width: 250px;
+  max-width: 100%;
+  height: auto;
 }
 
+.experienceandcompetences {
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .content {
+    padding: 9vh 13vw 2vh;
+  }
+}
+@media (max-width: 1280px) {
+  .content {
+    padding: 9vh 8vw 2vh;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    padding: 9vh 5vw 2vh;
+  }
+}
+@media (max-width: 480px) {
+  .content {
+    padding: 9vh 3vw 2vh;
+  }
+}
 html.transition,
 html.transition *,
 html.transition *:before,
