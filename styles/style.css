@@ -168,27 +168,10 @@ body {
 
 * {
   font-family: "Outfit", Arial, sans-serif;
+}
+
+*:not(h1, h2, h3, h4, h6, p, b) {
   font-size: 16px;
-}
-
-h1 {
-  font-size: clamp(0.76rem + 20px, -0.136rem + 3.205vw + 20px, 1.14rem + 20px);
-}
-
-h2 {
-  font-size: clamp(0.76rem + 15px, -0.136rem + 3.205vw + 15px, 1.14rem + 15px);
-}
-
-h3 {
-  font-size: clamp(0.76rem + 10px, -0.136rem + 3.205vw + 10px, 1.14rem + 10px);
-}
-
-h4 {
-  font-size: clamp(0.76rem + 5px, -0.136rem + 3.205vw + 5px, 1.14rem + 5px);
-}
-
-p, b {
-  font-size: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
 }
 
 .content {
