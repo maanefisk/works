@@ -208,6 +208,8 @@ body {
   font-weight: 900;
   font-size: 5em;
   margin: 0;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #000000;
 }
 .cvcontent h2, .cvcontent h3, .cvcontent h4 {
   font-weight: 700;
@@ -242,7 +244,7 @@ body {
 .cvimage {
   max-width: 100%;
   height: auto;
-  box-shadow: var(--boxshadow);
+  box-shadow: 2px 2px 0 #000000;
   -webkit-animation: morphing 10s ease-in-out infinite;
           animation: morphing 10s ease-in-out infinite;
 }
