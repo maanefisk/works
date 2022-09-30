@@ -25,24 +25,28 @@ body {
     overflow-y: auto;
 }
 .cvcontent {
-    background: var(--color1);
+    background: var(--secondarybg);
     width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 21vw 0;
+    padding: 0 21vw 2vh;
+
+    & *:not(h1) {
+        color: var(--primarycolor);
+    }
 
     & h1 {
         font-weight: 900;
         font-size: 5em;
         margin: 0;
-        color: #FFFFFF;
-        text-shadow: 2px 2px #000000;
+        color: var(--color1);
+        text-shadow: var(--boxshadowhard);
     }
     & h2, h3, h4 {
         font-weight: 700;
-        border-bottom: 1px dashed #000000;
+        border-bottom: 1px dashed var(--primarycolor);
     }
     & b {
         font-weight: 600;
@@ -56,22 +60,19 @@ body {
     width: 50%;
     padding: 3vw 5vw 4vw;
     box-sizing: border-box;
-    border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
-    box-shadow: var(--boxshadow);
 }
 .imagecontainer {
     background: var(--color3);
     width: 50%;
     padding: 3vw 5vw 4vw;
     box-sizing: border-box;
-    border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
 }
 .cvimage {
     max-width: 100%;
     height: auto;
-    box-shadow: 2px 2px 0 #000000;
+    box-shadow: var(--boxshadowhard);
     animation: morphing 10s ease-in-out infinite;
 }
 .experienceandcompetences {
@@ -111,22 +112,22 @@ body {
 
 @media (max-width: 1400px) {
     .cvcontent {
-        padding: 9vh 13vw 2vh;
+        padding: 0 13vw 2vh;
     }
 }
 @media (max-width: 1280px) {
     .cvcontent {
-        padding: 0 8vw 0;
+        padding: 0 8vw 2vh;
     }
 }
 @media (max-width: 767px) {
     .cvcontent {
-        padding: 0 5vw 0;
+        padding: 0 5vw 2vh;
     }
 }
 @media (max-width: 480px) {
     .cvcontent {
-        padding: 0 3vw 0;
+        padding: 0 3vw 2vh;
     }
     .imagecontainer {
         background: transparent;
