@@ -4,11 +4,24 @@ html {
     --primarybg: #FFFFFF;
     --secondarybg: #bebebe;
     --boxshadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+
+    --color1: #F7F8F3;
+    --color2: #E8C4AE;
+    --color3: #D5857E;
+    --color4: #C18561;
+    --color5: #DAB37C;
+    --color6: #FAE6AB;
+    --color7: #CDCB98;
+    --color8: #72845E;
+    --color9: #A9C8C3;
+    --color10: #5E7E7B;
+    --color11: #5075A9;
+    --color12: #C7C5DA;
 }
 html[data-theme='dark'] {
     --primarycolor: #FFFFFF;
     --secondarycolor: #00FFAE;
     --primarybg: #414141;
     --secondarybg: #1a1a1a;
-    box-shadow: none;
+    --box-shadow: none;
 }
