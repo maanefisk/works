@@ -65,6 +65,9 @@ html[data-theme=dark] {
 .header .darktogglecontainer .darktoggle {
   position: relative;
   cursor: pointer;
+  /* &:checked:before {
+
+  } */
 }
 .header .darktogglecontainer .darktoggle:before {
   content: "";
@@ -269,6 +272,9 @@ body {
   margin-top: 3vh;
   box-sizing: border-box;
   border-radius: 4px;
+}
+.experienceandcompetences.aboutme {
+  background: var(--color2);
 }
 .experienceandcompetences.education {
   background: var(--color7);
