@@ -4,6 +4,7 @@
 @import "./navigation";
 @import "./cvstyle";
 @import "./designstyle";
+@import "./graphicstyle";
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
@@ -48,7 +49,7 @@ body {
     }
     & h2, h3, h4 {
         font-weight: 700;
-        border-bottom: 1px dashed var(--primarycolor);
+        border-bottom: 2px dashed var(--primarycolor);
     }
     & b {
         font-weight: 600;

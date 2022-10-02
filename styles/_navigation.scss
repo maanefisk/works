@@ -65,18 +65,20 @@
     & .superheader {
         font-size : clamp(2.5rem, -0.875rem + 8.333vw, 3.5rem);
         font-weight: 600;
+        color: var(--secondarycolor);
     }
     & .supersubheader {
         font-size : clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
         white-space: nowrap;
         font-weight: 200;
+        color: var(--primarycolor);
     }
     & .headertext {
         overflow: hidden;  /* Hide the element content, while height = 0 */
         height: 0;
         opacity: 0;
         transition: all 0s;
-        color: var(--primarycolor);
+        
     }
 
     &:hover {

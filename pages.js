@@ -114,40 +114,109 @@ function cvview() {
 function designview() {
   document.getElementById("content").innerHTML = `
   <div class="innercontent designcontent">
-  <div class="divider aboutme">
-      <h2>Om meg:</h2>
-      <p>
-          Blir ofte beskrevet som en kreativ person og kjenner jeg blir lett engasjert og fokusert når jeg jobber med
-          kreative oppgaver.
-          <br><br>
-          Jeg liker å formidle orginalitet men har alltid ett ekstra øye til trender, gøy å bli inspirert på den måten.
-          <br><br>
-          Setter utrolig pris på å jobbe med design av alle typer, kjempegøy å drive med frontend.
-          <br><br>
-          Det å kunne utføre oppgaver med flid, utføre en god jobb og være en god kollega er viktig for meg.
-          <br><br>
-          Jeg har alltid blitt dratt mot det å jobbe med håndtverk, men har med åra opplevd at det å kunne utrykke dette digitalt og
-          innafor de rammene er veldig givende og spesielt hvis det gleder noen eller oppleves på en positiv måte.
-      </p>
-  </div>
-  <div class="divider competences">
-      <h2>Om meg:</h2>
-      <p>
-          Blir ofte beskrevet som en kreativ person og kjenner jeg blir lett engasjert og fokusert når jeg jobber med
-          kreative oppgaver.
-          <br><br>
-          Jeg liker å formidle orginalitet men har alltid ett ekstra øye til trender, gøy å bli inspirert på den måten.
-          <br><br>
-          Setter utrolig pris på å jobbe med design av alle typer, kjempegøy å drive med frontend.
-          <br><br>
-          Det å kunne utføre oppgaver med flid, utføre en god jobb og være en god kollega er viktig for meg.
-          <br><br>
-          Jeg har alltid blitt dratt mot det å jobbe med håndtverk, men har med åra opplevd at det å kunne utrykke dette digitalt og
-          innafor de rammene er veldig givende og spesielt hvis det gleder noen eller oppleves på en positiv måte.
-      </p>
-  </div>
-</div>
-<div class="footer">© 2022 Charlotte Aimée Bugge</div>
+                <div class="divider section1">
+                  <h1>Design</h1>
+                    <div class="explanation">
+                        <h2>Kundetilpassede system</h2>
+                    <p>
+                        Noen ganger vil kundene at systemet skal passe inn med deres egne designmanualer, og ha sin egen logo.
+                        <br>
+                        Her jobber jeg ut ifra at innloggingen og menyen skal ha samme oppsett men kan tilpasse farger, justere mellomrom,
+                        overganger og eksempelvis <b>:hover</b> effekter. Alt ettersom hva kunden er vant med, eller som er spesifisert i deres designmanual.
+                        <br>
+                        <br>
+                        <b>Her er noen eksempler på forskjellige tilpasninger som jeg har gjort:</b>
+                    </p>
+                    </div>
+                    <div class="images">
+                        <img class="single" src="./images/design/banners.svg" alt="Custom banners">
+                        <div class="explanation withborder">
+                        <p>
+                            Noen ganger har kundene bilder fra før, og andre ganger krever det litt kreativitet.
+                            <br>
+                            <br>
+                            Det er jo blant annet viktig at det er god kontrast, så tekst synes. Det er ikke alltid sånn og da må jeg prøve
+                            så godt jeg kan å tilpasse det ved å duse ut, legge noen overlays eller lage grafikk enten av deres egen grafikk
+                            eller noe jeg finner på som kan passe deres design.
+                            <br>
+                            <br>
+                            Her kan det være strenge begrensninger og regler skrevet i designmanualen og da er det viktig å respektere dette,
+                            også skal det se pent ut i systemet også!
+                        </p>
+                        </div>
+                        <img class="single" src="./images/design/aoflogin.png" alt="Aoflogin">
+                        <img class="single" src="./images/design/ghlogin.png" alt="Ghlogin">
+                    </div>
+                </div>
+                <div class="divider section2">
+                    <div class="explanation">
+                        <h2 class="child">App design</h2>
+                        <p class="child">
+                        Her fikk jeg i oppgave å designe en app.
+                        Dette er mockviews fra appens sider.
+                        </p>
+                    </div>
+                    <div class="images">
+                        <img class="single" src="./images/design/app1.jpg" alt="App Mock views">
+                        <div class="explanation withborder">
+                            <p class="child">
+                                Det ble ikke noe av denne appen, men det var utrolig gøy å få være med på å utvikle!
+                                <br><br>
+                                Her ble fargene i designet, inspirert av lyset på snøen i vintermørket og formene av glass og is.
+                                <br><br>
+                                Elementene formet som glass er svg-elementer, så de er 100% skalérbare. Jeg elsker å jobbe med SVG!
+                                Synes rett å slett man kan gjøre utrolig mye artig designmessig med denne filtypen og tilpasser seg
+                                responsivt design godt. 
+                                <br><br>
+                                <b class="child">Det skal jo se bra ut på alle enheter.</b>
+                            </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="divider rowsections section3">
+                    <div class="explanation">
+                        <h2>App design 2</h2>
+                        <p>
+                        En annen app, her med bilder fra html'en.
+                        <br><br>
+                        Her fikk jeg utfordre meg med css animasjoner og responsivt design.
+                        <br><br>
+                        Eksempelvis ser man punkter på vei opp fjellet. For hver oppgave skulle det komme ett nytt punkt, for hver oppgave
+                        fullført endres den striplede linja til en solid linje. 
+                        <br><br>
+                        Man skulle også kunne slette punkter, og de måtte faktisk se ut
+                        som at de klatret oppover fjellet som en ekte turrute.
+                        <br><br>
+                        I tillegg skulle det fungere responsivt og tilpasse seg forskjellige
+                        enheter. Dermed brukte jeg SVG og oppdaterte den via javascript. 
+                        </p>
+                    </div>
+                    <div class="images">
+                        <img class="single" src="./images/design/app2.png" alt="App Mock views">
+                    </div>
+                </div>
+                <div class="divider rowsections section4">
+                    <div class="explanation">
+                        <h2>Kortstokk design</h2>
+                        <p>
+                        Så en litt egenartet og artig oppgave jeg fikk, hva med å lage ett kortstokk design til en A2 kortstokk?
+                        <br>
+                        <br>
+                        Jeg lastet ned en ferdig pakke med mønster og snirkler og prøvde å sette sammmen mønsterene til å bli en bakgrunn
+                        på kortene som ville se mest mulig klassisk kortstokk ut.
+                        <br><br>
+                        Pluss å implementere firmaets logo i designet på en subtil måte.
+                        <br><br>
+                        Her kom det en uventet ekstra utfordring! Hvis man snur kortet, skal man ikke vite hvem vei som er opp eller ned.
+                        Derfor var det viktig at kortet kan rotere uten at man ser forskjell.
+                        </p>
+                    </div>
+                    <div class="images">
+                        <img class="single carddeck" src="./images/design/card_design.png" alt="App Mock views">
+                    </div>
+                </div>
+              </div>
+              <div class="footer">© 2022 Charlotte Aimée Bugge</div>
       `;
 }
 function graphicview() {
