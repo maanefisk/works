@@ -4,8 +4,6 @@ html {
   --secondarycolor: var(--color10);
   --primarybg: #F7F8F3;
   --secondarybg: #F0F2E8;
-  --primarybgtransparent: rgba(247, 248, 243, 0.7);
-  --secondarybgtransparent: rgba(240, 242, 232, 0.7);
   --boxshadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   --boxshadowhard: 3px 2px 0 #000000;
   --color1: #F7F8F3;
@@ -27,8 +25,6 @@ html[data-theme=dark] {
   --secondarycolor: var(--color6);
   --primarybg: #5B5B5B;
   --secondarybg: #2E2E2E;
-  --primarybgtransparent: rgba(91, 91, 91, 0.7);
-  --secondarybgtransparent: rgba(46, 46, 46, 0.7);
   --boxshadow: none;
   --boxshadowhard: 3px 2px 0 #FFFFFF;
   --color1: #151515;
@@ -81,16 +77,15 @@ html[data-theme=dark] {
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  height: 8vh;
+  height: 70px;
   width: 100vw;
   top: 0;
   left: 0;
-  background: var(--primarybgtransparent);
+  background: var(--primarybg);
   box-sizing: border-box;
   transition: height 0.6s ease-out;
   box-shadow: var(--boxshadow);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  z-index: 2;
 }
 .header .darktogglecontainer {
   position: absolute;
@@ -155,7 +150,7 @@ html[data-theme=dark] {
   color: var(--primarycolor);
 }
 .header:hover {
-  height: 30vh;
+  height: 250px;
 }
 .header:hover .headertext {
   height: auto;
@@ -231,7 +226,7 @@ html[data-theme=dark] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 21vw 2vh;
+  padding: 0 21vw 0;
 }
 .cvcontent *:not(h1) {
   color: var(--primarycolor);
@@ -259,7 +254,6 @@ html[data-theme=dark] {
   width: 50%;
   padding: 3vw 5vw 4vw;
   box-sizing: border-box;
-  border-bottom-left-radius: 4px;
 }
 
 .imagecontainer {
@@ -267,7 +261,6 @@ html[data-theme=dark] {
   width: 50%;
   padding: 3vw 5vw 4vw;
   box-sizing: border-box;
-  border-bottom-right-radius: 4px;
 }
 
 .cvimage {
@@ -281,9 +274,7 @@ html[data-theme=dark] {
 .experienceandcompetences {
   width: 100%;
   padding: 3vw 5vw 4vw;
-  margin-top: 3vh;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 .experienceandcompetences.aboutme {
   background: var(--color2);
@@ -303,22 +294,22 @@ html[data-theme=dark] {
 
 @media (max-width: 1400px) {
   .cvcontent {
-    padding: 0 13vw 2vh;
+    padding: 0 13vw 0;
   }
 }
 @media (max-width: 1280px) {
   .cvcontent {
-    padding: 0 8vw 2vh;
+    padding: 0 8vw 0;
   }
 }
 @media (max-width: 767px) {
   .cvcontent {
-    padding: 0 5vw 2vh;
+    padding: 0 5vw 0;
   }
 }
 @media (max-width: 480px) {
   .cvcontent {
-    padding: 0 3vw 2vh;
+    padding: 0 0 0;
   }
   .imagecontainer {
     background: transparent;
@@ -328,7 +319,6 @@ html[data-theme=dark] {
   .personalia {
     width: 100%;
     order: 2;
-    border-radius: 4px;
   }
   .experienceandcompetences {
     order: 3;
@@ -367,7 +357,6 @@ html[data-theme=dark] {
   width: 100%;
   padding: 3vw 26vw 4vw;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 .divider.aboutme {
   background: var(--color2);
@@ -386,23 +375,23 @@ html[data-theme=dark] {
 }
 
 @media (max-width: 1400px) {
-  .designcontent {
-    padding: 0 13vw 2vh;
+  .divider {
+    padding: 3vw 13vw 4vw;
   }
 }
 @media (max-width: 1280px) {
-  .designcontent {
-    padding: 0 8vw 2vh;
+  .divider {
+    padding: 3vw 8vw 4vw;
   }
 }
 @media (max-width: 767px) {
-  .designcontent {
-    padding: 0 5vw 2vh;
+  .divider {
+    padding: 3vw 5vw 4vw;
   }
 }
 @media (max-width: 480px) {
-  .designcontent {
-    padding: 0 3vw 2vh;
+  .divider {
+    padding: 3vw 3vw 4vw;
   }
 }
 /* wrighting a comment */
@@ -424,7 +413,7 @@ body {
   width: 100vw;
   background: var(--secondarybg);
   box-sizing: border-box;
-  padding: 8vh 0 0;
+  padding: 70px 0 0;
   overflow-y: auto;
 }
 

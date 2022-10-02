@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 21vw 2vh;
+    padding: 0 21vw 0;
 
     & *:not(h1) {
         color: var(--primarycolor);
@@ -34,14 +34,12 @@
     width: 50%;
     padding: 3vw 5vw 4vw;
     box-sizing: border-box;
-    border-bottom-left-radius: 4px;
 }
 .imagecontainer {
     background: var(--color3);
     width: 50%;
     padding: 3vw 5vw 4vw;
     box-sizing: border-box;
-    border-bottom-right-radius: 4px;
 }
 .cvimage {
     max-width: 100%;
@@ -52,9 +50,7 @@
 .experienceandcompetences {
     width: 100%;
     padding: 3vw 5vw 4vw;
-    margin-top: 3vh;
     box-sizing: border-box;
-    border-radius: 4px;
     &.aboutme {
         background: var(--color2);
     }
@@ -74,22 +70,22 @@
 
 @media (max-width: 1400px) {
     .cvcontent {
-        padding: 0 13vw 2vh;
+        padding: 0 13vw 0;
     }
 }
 @media (max-width: 1280px) {
     .cvcontent {
-        padding: 0 8vw 2vh;
+        padding: 0 8vw 0;
     }
 }
 @media (max-width: 767px) {
     .cvcontent {
-        padding: 0 5vw 2vh;
+        padding: 0 5vw 0;
     }
 }
 @media (max-width: 480px) {
     .cvcontent {
-        padding: 0 3vw 2vh;
+        padding: 0 0 0;
     }
     .imagecontainer {
         background: transparent;
@@ -99,7 +95,6 @@
     .personalia {
         width: 100%;
         order: 2;
-        border-radius: 4px;
     }
     .experienceandcompetences {
         order: 3;

@@ -32,7 +32,6 @@
     width: 100%;
     padding: 3vw 26vw 4vw;
     box-sizing: border-box;
-    border-radius: 4px;
     &.aboutme {
         background: var(--color2);
     }
@@ -51,22 +50,22 @@
 }
 
 @media (max-width: 1400px) {
-    .designcontent {
-        padding: 0 13vw 2vh;
+    .divider {
+        padding: 3vw 13vw 4vw;
     }
 }
 @media (max-width: 1280px) {
-    .designcontent {
-        padding: 0 8vw 2vh;
+    .divider {
+        padding: 3vw 8vw 4vw;
     }
 }
 @media (max-width: 767px) {
-    .designcontent {
-        padding: 0 5vw 2vh;
+    .divider {
+        padding: 3vw 5vw 4vw;
     }
 }
 @media (max-width: 480px) {
-    .designcontent {
-        padding: 0 3vw 2vh;
+    .divider {
+        padding: 3vw 3vw 4vw;
     }
 }
