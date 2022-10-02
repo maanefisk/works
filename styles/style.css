@@ -341,7 +341,6 @@ html[data-theme=dark] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* padding: 0 21vw 2vh; */
 }
 .designcontent *:not(h1) {
   color: var(--primarycolor);
@@ -366,7 +365,7 @@ html[data-theme=dark] {
 
 .divider {
   width: 100%;
-  padding: 3vw 5vw 4vw;
+  padding: 3vw 26vw 4vw;
   box-sizing: border-box;
   border-radius: 4px;
 }
