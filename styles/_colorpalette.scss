@@ -3,6 +3,8 @@ html {
     --secondarycolor: var(--color10);
     --primarybg: #F7F8F3;
     --secondarybg: #F0F2E8;
+    --primarybgtransparent: rgba(247, 248, 243, 0.7);
+    --secondarybgtransparent: rgba(240, 242, 232, 0.7);
     --boxshadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     --boxshadowhard: 3px 2px 0 #000000;
 
@@ -24,6 +26,8 @@ html[data-theme='dark'] {
     --secondarycolor: var(--color6);
     --primarybg: #5B5B5B;
     --secondarybg: #2E2E2E;
+    --primarybgtransparent: rgba(91, 91, 91, 0.7);
+    --secondarybgtransparent: rgba(46, 46, 46, 0.7);
     --boxshadow: none;
     --boxshadowhard: 3px 2px 0 #FFFFFF;
 
