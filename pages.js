@@ -1,6 +1,6 @@
 function cvview() {
   document.getElementById("content").innerHTML = `
-  <div class="cvcontent">
+  <div class="innercontent cvcontent">
   <div class="personalia">
       <h1>CV</h1>
       <br>
@@ -113,7 +113,7 @@ function cvview() {
 }
 function designview() {
   document.getElementById("content").innerHTML = `
-  <div class="designcontent">
+  <div class="innercontent designcontent">
   <div class="divider aboutme">
       <h2>Om meg:</h2>
       <p>

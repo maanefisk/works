@@ -116,7 +116,9 @@
                 position: absolute;
                 top: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
                 right: 0;
+                height: -moz-fit-content;
                 height: fit-content;
+                width: -moz-fit-content;
                 width: fit-content;
                 background: var(--primarybg);
                 padding: 8px 16px;

@@ -195,11 +195,11 @@ html[data-theme=dark] {
   position: absolute;
   top: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
   right: 0;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   background: var(--primarybg);
   padding: 8px 16px;
@@ -220,75 +220,45 @@ html[data-theme=dark] {
 }
 
 .cvcontent {
-  background: var(--secondarybg);
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   padding: 0 21vw 0;
 }
-.cvcontent *:not(h1) {
-  color: var(--primarycolor);
-}
-.cvcontent h1 {
-  font-weight: 900;
-  font-size: 5em;
-  margin: 0;
-  color: var(--color1);
-  text-shadow: var(--boxshadowhard);
-}
-.cvcontent h2, .cvcontent h3, .cvcontent h4 {
-  font-weight: 700;
-  border-bottom: 1px dashed var(--primarycolor);
-}
-.cvcontent b {
-  font-weight: 600;
-}
-.cvcontent p {
-  font-weight: 300;
-}
-
-.personalia {
+.cvcontent .personalia {
   background: var(--color3);
   width: 50%;
   padding: 3vw 5vw 4vw;
   box-sizing: border-box;
 }
-
-.imagecontainer {
+.cvcontent .imagecontainer {
   background: var(--color3);
   width: 50%;
   padding: 3vw 5vw 4vw;
   box-sizing: border-box;
 }
-
-.cvimage {
+.cvcontent .cvimage {
   max-width: 100%;
   height: auto;
   box-shadow: var(--boxshadowhard);
   -webkit-animation: morphing 10s ease-in-out infinite;
           animation: morphing 10s ease-in-out infinite;
 }
-
-.experienceandcompetences {
+.cvcontent .experienceandcompetences {
   width: 100%;
   padding: 3vw 5vw 4vw;
   box-sizing: border-box;
 }
-.experienceandcompetences.aboutme {
+.cvcontent .experienceandcompetences.aboutme {
   background: var(--color2);
 }
-.experienceandcompetences.education {
+.cvcontent .experienceandcompetences.education {
   background: var(--color7);
 }
-.experienceandcompetences.workexperience {
+.cvcontent .experienceandcompetences.workexperience {
   background: var(--color9);
 }
-.experienceandcompetences.competences {
+.cvcontent .experienceandcompetences.competences {
   background: var(--color5);
 }
-.experienceandcompetences.languages {
+.cvcontent .experienceandcompetences.languages {
   background: var(--color12);
 }
 
@@ -311,86 +281,91 @@ html[data-theme=dark] {
   .cvcontent {
     padding: 0 0 0;
   }
-  .imagecontainer {
+  .cvcontent .imagecontainer {
     background: transparent;
     width: 100%;
     order: 1;
   }
-  .personalia {
+  .cvcontent .personalia {
     width: 100%;
     order: 2;
   }
-  .experienceandcompetences {
+  .cvcontent .experienceandcompetences {
     order: 3;
   }
 }
-.designcontent {
-  background: var(--secondarybg);
+.designcontent .divider {
   width: 100%;
+  padding: 3vw 13vw 4vw;
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
-.designcontent *:not(h1) {
-  color: var(--primarycolor);
-}
-.designcontent h1 {
-  font-weight: 900;
-  font-size: 5em;
-  margin: 0;
-  color: var(--color1);
-  text-shadow: var(--boxshadowhard);
-}
-.designcontent h2, .designcontent h3, .designcontent h4 {
-  font-weight: 700;
-  border-bottom: 1px dashed var(--primarycolor);
-}
-.designcontent b {
-  font-weight: 600;
-}
-.designcontent p {
-  font-weight: 300;
-}
-
-.divider {
-  width: 100%;
-  padding: 3vw 26vw 4vw;
+.designcontent .divider .withborder {
+  border: 1px dashed var(--primarycolor);
   box-sizing: border-box;
+  padding: 0 0.5em;
+  margin: 1em 0;
 }
-.divider.aboutme {
-  background: var(--color2);
+.designcontent .divider.section1 {
+  flex-direction: column;
+  background: var(--secondarybg);
 }
-.divider.education {
-  background: var(--color7);
+.designcontent .divider.section1 .explanation {
+  width: 100%;
 }
-.divider.workexperience {
-  background: var(--color9);
+.designcontent .divider.section1 .images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.divider.competences {
-  background: var(--color5);
+.designcontent .divider.section1 .images .single {
+  max-width: 100%;
+  height: auto;
 }
-.divider.languages {
-  background: var(--color12);
+.designcontent .divider.section2 {
+  flex-direction: column;
+  background: #262626;
+}
+.designcontent .divider.section2 .explanation {
+  width: 100%;
+}
+.designcontent .divider.section2 .explanation .child {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.designcontent .divider.section2 .explanation.withborder {
+  border: 1px dashed #FFFFFF;
+  box-sizing: border-box;
+  padding: 0 0.5em;
+  margin: 1em 0;
+}
+.designcontent .divider.section2 .images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.designcontent .divider.section2 .images .single {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 1400px) {
-  .divider {
-    padding: 3vw 13vw 4vw;
-  }
-}
-@media (max-width: 1280px) {
-  .divider {
+  .designcontent .divider {
     padding: 3vw 8vw 4vw;
   }
 }
-@media (max-width: 767px) {
-  .divider {
+@media (max-width: 1280px) {
+  .designcontent .divider {
     padding: 3vw 5vw 4vw;
   }
 }
+@media (max-width: 767px) {
+  .designcontent .divider {
+    padding: 3vw 3vw 4vw;
+  }
+}
 @media (max-width: 480px) {
-  .divider {
+  .designcontent .divider {
     padding: 3vw 3vw 4vw;
   }
 }
@@ -415,6 +390,35 @@ body {
   box-sizing: border-box;
   padding: 70px 0 0;
   overflow-y: auto;
+}
+
+.innercontent {
+  background: var(--secondarybg);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.innercontent *:not(h1) {
+  color: var(--primarycolor);
+}
+.innercontent h1 {
+  font-weight: 900;
+  font-size: 5em;
+  margin: 0;
+  color: var(--color1);
+  text-shadow: var(--boxshadowhard);
+}
+.innercontent h2, .innercontent h3, .innercontent h4 {
+  font-weight: 700;
+  border-bottom: 1px dashed var(--primarycolor);
+}
+.innercontent b {
+  font-weight: 600;
+}
+.innercontent p {
+  font-weight: 300;
 }
 
 .footer {
