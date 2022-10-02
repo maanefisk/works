@@ -1,0 +1,73 @@
+.designcontent {
+    background: var(--secondarybg);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* padding: 0 21vw 2vh; */
+
+    & *:not(h1) {
+        color: var(--primarycolor);
+    }
+
+    & h1 {
+        font-weight: 900;
+        font-size: 5em;
+        margin: 0;
+        color: var(--color1);
+        text-shadow: var(--boxshadowhard);
+    }
+    & h2, h3, h4 {
+        font-weight: 700;
+        border-bottom: 1px dashed var(--primarycolor);
+    }
+    & b {
+        font-weight: 600;
+    }
+    & p {
+        font-weight: 300;
+    }
+}
+.divider {
+    width: 100%;
+    padding: 3vw 5vw 4vw;
+    box-sizing: border-box;
+    border-radius: 4px;
+    &.aboutme {
+        background: var(--color2);
+    }
+    &.education {
+        background: var(--color7);
+    }
+    &.workexperience {
+        background: var(--color9);
+    }
+    &.competences {
+        background: var(--color5);
+    }
+    &.languages {
+        background: var(--color12);
+    }
+}
+
+@media (max-width: 1400px) {
+    .designcontent {
+        padding: 0 13vw 2vh;
+    }
+}
+@media (max-width: 1280px) {
+    .designcontent {
+        padding: 0 8vw 2vh;
+    }
+}
+@media (max-width: 767px) {
+    .designcontent {
+        padding: 0 5vw 2vh;
+    }
+}
+@media (max-width: 480px) {
+    .designcontent {
+        padding: 0 3vw 2vh;
+    }
+}
