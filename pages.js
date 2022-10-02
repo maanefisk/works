@@ -212,7 +212,7 @@ function designview() {
                         </p>
                     </div>
                     <div class="images">
-                        <img class="single carddeck" src="./images/design/card_design.png" alt="App Mock views">
+                        <img class="single carddeck" src="./images/design/card_design.png" alt="Carddeck design">
                     </div>
                 </div>
               </div>
