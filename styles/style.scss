@@ -5,6 +5,7 @@
 @import "./cvstyle";
 @import "./designstyle";
 @import "./graphicstyle";
+@import "./anistyle";
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
@@ -21,6 +22,7 @@ body {
     font-size: 16px;
 }
 .content {
+    position: relative;
     height: 100vh;
     width: 100vw;
     background: var(--secondarybg);

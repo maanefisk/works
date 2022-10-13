@@ -1,0 +1,68 @@
+.anicontent {
+    position: relative;
+    & .divide {
+        width: 100%;
+        min-height: calc(95vh - 70px);
+        padding: 3vw 13vw 4vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        background: var(--color7);
+
+        & h1 {
+            font-size : clamp(3.5rem, -1.875rem + 9.333vw, 4.5rem);
+        }
+        & .withborder {
+            border: 2px dashed var(--primarycolor);
+            box-sizing: border-box;
+            padding: 0 0.5em;
+            margin: 1em 0;
+        }
+        & .explanationani {
+            width: 100%;
+            font-size: 18px;
+        }
+        & .animations {
+            height: fit-content;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .anicontent {
+        & .divide {
+            padding: 3vw 8vw 4vw;
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .anicontent {
+        & .divide {
+            padding: 3vw 5vw 4vw;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .anicontent {
+        & .divide {
+            padding: 3vw 3vw 4vw;
+
+            & .animations {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .anicontent {
+        & .divide {
+            padding: 3vw 3vw 4vw;
+        
+        }
+    }
+}
