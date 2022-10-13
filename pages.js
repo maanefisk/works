@@ -332,37 +332,66 @@ function graphicview() {
 function animationview() {
   document.getElementById("content").innerHTML = `
   <div class="innercontent anicontent">
-  <div class="divide">
-    <h1>Animasjon</h1>
-      <div class="explanationani">
-          <h2>Aftereffects og lottiefiles</h2>
-      <p>
-          Det finnes en kjempestilig plugin for Aftereffects som heter <a href="https://lottiefiles.com/" target="_blank">Lottiefiles</a>. Etter hva jeg skjønner er det AirBNB som
-          utviklet dette iallefall i starten.
-          <br>
-          <br>
-          Denne pluginen tillater å exportere animasjon fra Aftereffects med visse kriterier, over til lottiefiles. Herfra
-          kan man eksportere animasjonen som JSON, GIF. Man kan tilogmed få animasjonen til å reagere på f.eks. museklikk.
-          <br><br>
-      </p>
-      </div>
-      <div class="animations">
-          <lottie-player src="https://lottie.host/5315976d-de01-439e-aed6-dcebd34bb1ad/alXKtaBAAu.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-          <lottie-player src="https://lottie.host/bc0ebe82-6683-4d19-a677-948d533db21a/qnnzL0N5Cf.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-          <lottie-player src="https://lottie.host/bbe80f19-e253-4e9d-b4f0-2f90ca5e9099/y6GbBDSz1v.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-      </div>
-      <div class="explanationani withborder">
-      <p>
-      Spillerne av animasjonen skal visstnok ikke være så krevende å dra.
-          Low end mobile throttling i browseren min er iallefall enig :)
-          <br>
-          <br>
-          Før var de gratis, nå må man betale litt årlig. Men vel verdt det når man ser hvilket potensiale for webdesign dette kan ha!
-          Jeg hadde masse animasjoner der, før de gjorde det store skifte. Etter ble alle sammen borte og glemte å ta backup av mye av dette.
-          Men jeg fant noen jeg kunne laste opp igjen!
-      </p>
-      </div>
-  </div>
+    <div class="divide">
+        <h1>Animasjon</h1>
+        <div class="explanationani">
+            <h2>Aftereffects og lottiefiles</h2>
+        <p>
+            Det finnes en kjempestilig plugin for Aftereffects som heter <a href="https://lottiefiles.com/" target="_blank">Lottiefiles</a>. Etter hva jeg skjønner er det AirBNB som
+            utviklet dette iallefall i starten.
+            <br>
+            <br>
+            Denne pluginen tillater å exportere animasjon fra Aftereffects med visse kriterier, over til lottiefiles. Herfra
+            kan man eksportere animasjonen som JSON, GIF. Man kan tilogmed få animasjonen til å reagere på f.eks. museklikk.
+            <br><br>
+        </p>
+        </div>
+        <div class="animations">
+            <lottie-player src="https://lottie.host/5315976d-de01-439e-aed6-dcebd34bb1ad/alXKtaBAAu.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+            <lottie-player src="https://lottie.host/bc0ebe82-6683-4d19-a677-948d533db21a/qnnzL0N5Cf.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+            <lottie-player src="https://lottie.host/bbe80f19-e253-4e9d-b4f0-2f90ca5e9099/y6GbBDSz1v.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+        <div class="explanationani withborder">
+            <p>
+                Spillerne av animasjonen skal visstnok ikke være så krevende å dra.
+                Low end mobile throttling i browseren min er iallefall enig :)
+                <br>
+                <br>
+                Før var de gratis, nå må man betale litt årlig. Men vel verdt det når man ser hvilket potensiale for webdesign dette kan ha!
+                Jeg hadde masse animasjoner der, før de gjorde det store skifte. Etter ble alle sammen borte og glemte å ta backup av mye av dette.
+                Men jeg fant noen jeg kunne laste opp igjen!
+            </p>
+        </div>
+    </div>
+    <div class="divide divide2">
+        <div class="explanationani">
+            <h2>Tidligere animasjoner fra aftereffektss</h2>
+        <p>
+            Jenta og nøkken er fra ett felles prosjekt vi hadde når jeg gikk på Høyskolen Kristiania.
+            Jeg var en av tre som animerte bildene vi fikk fra illustrasjon.
+            De andre er animasjoner jeg har gjort selv.
+            Promovideo for UT appen var fiktiv.
+            <br>
+            Craigmillar Bookfestival i Edinburgh trengte animert logo, så jeg stilte opp.
+            <br>
+            Boo logoen og process games logo animasjonene var også fiktive oppgaver.
+        </p>
+        </div>
+        <div class="animations youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xdCoCARqI_U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OfDbHPnjIiY" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/13QXXwwf2yk" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/POjGosS9e0w" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hnOqWU6HhCI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K497b3KeUZE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="explanationani withborder">
+            <p>
+                Det er en stund siden jeg animerte disse, som man ser på iPhonen i UT videoen. Den er ut rett å slett, hehe.
+                Men jeg holder det meste av basic animasjonskunnskap vedlike, og finner det utrolig morro å holde på med.
+            </p>
+        </div>
+    </div>
 </div>
 <div class="footer">© 2022 Charlotte Aimée Bugge</div>
       `;

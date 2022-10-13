@@ -609,6 +609,14 @@ html[data-theme=dark] {
   flex-direction: row;
   justify-content: space-between;
 }
+.anicontent .divide .youtube {
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+.anicontent .divide2 {
+  background: var(--color8);
+}
 
 @media (max-width: 1400px) {
   .anicontent .divide {

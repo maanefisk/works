@@ -30,6 +30,14 @@
             flex-direction: row;
             justify-content: space-between;
         }
+        & .youtube {
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+    }
+    & .divide2 {
+        background: var(--color8);
     }
 }
 
