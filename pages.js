@@ -8,7 +8,7 @@ function cvview() {
       <b>Navn</b>
       <p>Charlotte Aimée Bugge</p>
       <b>Adresse</b>
-      <p>Storgata 25 Larvik</p>
+      <p>Storgata 25 3256 Larvik</p>
       <b>Mobil</b>
       <p>97603332</p>
       <b>Epost</b>
