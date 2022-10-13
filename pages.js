@@ -130,9 +130,14 @@ function designview() {
                     </div>
                     <div class="images">
                         <img class="single" src="./images/design/banners.svg" alt="Custom banners">
+                        <img class="single" src="./images/design/tease.png" alt="A little teaseto show some of the inside">
                         <div class="explanation withborder">
                         <p>
                             Noen ganger har kundene bilder fra før, og andre ganger krever det litt kreativitet.
+                            <br>
+                            (Som i eksemplet over. Hos bua lagde jeg en grafikk i menyen for å bryte med blokk-fargene, hos Østerbo
+                                videregående skole ville jeg lage en banner som var litt trendbasert og hos Krimek eller KM lage litt grafikk
+                                som matchet retropreget i logoen dems.)
                             <br>
                             <br>
                             Det er jo blant annet viktig at det er god kontrast, så tekst synes. Det er ikke alltid sånn og da må jeg prøve
@@ -142,10 +147,31 @@ function designview() {
                             <br>
                             Her kan det være strenge begrensninger og regler skrevet i designmanualen og da er det viktig å respektere dette,
                             også skal det se pent ut i systemet også!
+                            <br>
+                            Prøver å tenke på universal utforming når jeg lager design. Det er ikke alltid så lett å vite om jeg treffer på
+                            riktig kontrast.. Prøver å ha som regel at det skal være minst 60% kontrast på den viktigste informasjonen, og
+                            gjerne sette opp tekststørrelsen der det lar seg gjøre.
+                            Dette tilpasses også kundens behov, og jeg prøver å finne en balanse der.
                         </p>
                         </div>
-                        <img class="single" src="./images/design/aoflogin.png" alt="Aoflogin">
-                        <img class="single" src="./images/design/ghlogin.png" alt="Ghlogin">
+                        <img class="single" src="./images/design/alba_kaffe.png" alt="Albatrossenkaffe login">
+                        <img class="single" src="./images/design/ghlogin.png" alt="Grendland Havn login">
+                        <img class="single" src="./images/design/bua.png" alt="Bua login">
+                        <img class="single" src="./images/design/everyhair.png" alt="Everyhair login">
+                        <img class="single" src="./images/design/fargerike.png" alt="Fargerike login">
+                        <img class="single" src="./images/design/kleva.png" alt="Kleva login">
+                        <img class="single" src="./images/design/petxl.png" alt="Pet XL login">
+                        <img class="single" src="./images/design/sfjbb.png" alt="Sandefjord Bredbånd login">
+                        <img class="single" src="./images/design/sjosport.png" alt="Sjøsport login">
+                        <img class="single" src="./images/design/solcellespesialisten.png" alt="Solcellespesialisten login">
+                        <div class="explanation withborder">
+                        <p>
+                        Å jobbe med kundetilpasninger har vært en stor glede! Så moro når kunden kommer tilbake og forteller de er fornøyd!
+                        </p>
+                        </div>
+                        <img class="single" src="./images/design/tease2.png" alt="Logintease">
+                        <img class="single" src="./images/design/tease3.png" alt="Logintease">
+                        <img class="single" src="./images/design/tease4.png" alt="Logintease">
                     </div>
                 </div>
                 <div class="divider section2">

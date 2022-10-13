@@ -344,6 +344,7 @@ html[data-theme=dark] {
 .designcontent .divider.section1 .images .single {
   max-width: 100%;
   height: auto;
+  margin-top: 1em;
 }
 .designcontent .divider.section2 {
   flex-direction: column;
