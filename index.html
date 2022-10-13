@@ -56,6 +56,13 @@
             if (model.page == 'Illustrasjon') illustrationview();
             if (model.page == 'Lag en avatar') avatarview();
             if (model.page == 'Mat meg') feedmeview();
+
+            let content = document.getElementById('content');
+            content.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
         }
         </script>
     </body>

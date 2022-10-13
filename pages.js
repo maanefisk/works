@@ -313,6 +313,18 @@ function graphicview() {
           <img class="single" src="./images/graphics/campingyeti.png" alt="Yeti sitting">
       </div>
   </div>
+  <div class="divider section4">
+      <div class="explanation">
+          <h2>Pikselgrafikk</h2>
+          <p>
+          Dette var til ett gruppesamarbeid jeg hadde på skolen. Vi ville lage ett tamagotchi spill og da lagde jeg noen 8-bit aktige
+          figurer som kunne brukes i spillet.
+          </p>
+      </div>
+      <div class="images">
+          <img class="single" src="./images/graphics/pixelkunst.png" alt="Pixelkunst">
+      </div>
+  </div>
 </div>
 <div class="footer">© 2022 Charlotte Aimée Bugge</div>
       `;

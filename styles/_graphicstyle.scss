@@ -67,6 +67,22 @@
                 }
             }
         }
+        &.section4 {
+            background: var(--secondarybg);
+
+            & .explanation {
+                width: 70%;
+                margin-right: 1em;
+            }
+            & .images {
+                width: 30%;
+                
+                & .single {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
         & .explanation {
             font-size: 18px;
         }
