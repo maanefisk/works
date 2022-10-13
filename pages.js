@@ -373,8 +373,8 @@ function animationview() {
             Promovideo for UT appen var fiktiv.
             <br>
             Craigmillar Bookfestival i Edinburgh trengte animert logo, så jeg stilte opp.
-            <br>
-            Boo logoen og process games logo animasjonene var også fiktive oppgaver.
+            Boo logoen og process games logo animasjonene var fiktive oppgaver.
+            Gyroskopet her er en veldig kort video. Her lagde jeg en enkel 3d-figur, som jeg animerte med litt matematikk. Looper man den går den sømløst.
         </p>
         </div>
         <div class="animations youtube">
@@ -389,6 +389,10 @@ function animationview() {
             <p>
                 Det er en stund siden jeg animerte disse, som man ser på iPhonen i UT videoen. Den er ut rett å slett, hehe.
                 Men jeg holder det meste av basic animasjonskunnskap vedlike, og finner det utrolig morro å holde på med.
+                <br>
+                <br>
+                Verdt å legge til at man kan animere masse bare med enkel css også, så bruker mye av kunnskapen jeg lærte på 3d & animasjon når
+                jeg animererer med CSS.
             </p>
         </div>
     </div>
