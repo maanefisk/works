@@ -241,6 +241,20 @@ function designview() {
                         <img class="single carddeck" src="./images/design/card_design.png" alt="Carddeck design">
                     </div>
                 </div>
+                <div class="divider rowsections section5">
+                    <div class="explanation">
+                        <h2>Magasin front</h2>
+                        <p>
+                        Jeg har ei venninne som driver med blomsterbinding og hun skulle delta i en konkurranse om å lage det beste
+                        liksom-coveret for ett blomstermagasin. Hun gjorde blomsterbindingen og tok bilde, jeg tok meg av resten i Photoshop :)
+                        <br><br>
+                        Hun vant! :)
+                        </p>
+                    </div>
+                    <div class="images">
+                        <img class="single" src="./images/design/6.png" alt="Blomsterbinding liksomcover">
+                    </div>
+                </div>
               </div>
               <div class="footer">© 2022 Charlotte Aimée Bugge</div>
       `;

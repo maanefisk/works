@@ -394,6 +394,9 @@ html[data-theme=dark] {
 .designcontent .divider.section4 .images {
   padding-left: 10%;
 }
+.designcontent .divider.section5 {
+  background: var(--color2);
+}
 .designcontent .divider .single {
   border-radius: 20px;
 }
