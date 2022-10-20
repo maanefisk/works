@@ -402,7 +402,57 @@ function animationview() {
 }
 function illustrationview() {
   document.getElementById("content").innerHTML = `
-      <div>Illustrasjon</div>
+  <div class="innercontent designcontent">
+  <div class="divider section1">
+    <h1>Illustrasjon</h1>
+      <div class="explanation">
+          <h2>Digital tegning</h2>
+      <p>
+          ...
+      </p>
+      </div>
+      <div class="images">
+          <img class="single" src="./images/illustration/5.png" alt="Vannvesen illustrasjon">
+          <img class="single" src="./images/illustration/Ilder.png" alt="Ilder illustrasjon">
+          <div class="explanation withborder">
+              <p>
+                  Noen ganger har kundene bilder fra før, og andre ganger krever det litt kreativitet.
+                  <br>
+                  (Som i eksemplet over. Hos bua lagde jeg en grafikk i menyen for å bryte med blokk-fargene, hos Østerbo
+                  videregående skole ville jeg lage en banner som var litt trendbasert og hos Krimek eller KM lage litt grafikk
+                  som matchet retropreget i logoen dems.)
+              </p>
+          </div>
+          <img class="single" src="./images/illustration/inthecontrolpanel.jpg" alt="Meditasjon illustrasjon">
+          <img class="single" src="./images/illustration/IdreamtIdweltinmarbleHalls.jpg" alt="Healing illustrasjon">
+          <img class="single" src="./images/illustration/Uten navn-1.png" alt="Ying og yang illustrasjon">
+          <img class="single" src="./images/illustration/drage2.png" alt="Drage illustrasjon">
+          <img class="single" src="./images/illustration/This_cave_is_full_of_love_nnaana_lucia2.png" alt="Romvesen illustrasjon">
+          <img class="single" src="./images/illustration/frekvensian.jpg" alt="Natttegning illustrasjon">
+          <img class="single" src="./images/illustration/Speedy_raven_sensei.jpg" alt="Ravnerobot illustrasjon">
+          <img class="single" src="./images/illustration/Speedy_Robogurl_50000.jpg" alt="Robot alien illustrasjon">
+          <img class="single" src="./images/illustration/Spirit.png" alt="Englevakt illustrasjon">
+          <div class="explanation withborder">
+          <p>
+          Å jobbe med kundetilpasninger har vært en stor glede! Så moro når kunden kommer tilbake og forteller de er fornøyd!
+          </p>
+          </div>
+      </div>
+  </div>
+  <div class="divider section2">
+      <div class="explanation">
+          <h2 class="child">3D</h2>
+          <p class="child">
+              Legger ved det siste 3D prosjektet jeg hadde på Høyskolen Kristiania. Pluss en delfin jeg lagde på gøy.
+          </p>
+      </div>
+      <div class="images">
+          <img class="single" src="./images/illustration/Diorama_Poster2.png" alt="Diorma 3D figur">
+          <img class="single" src="./images/illustration/ForeverDolphinLove.png" alt="Delfin 3D figur">
+      </div>
+  </div>
+</div>
+<div class="footer">© 2022 Charlotte Aimée Bugge</div>
       `;
 }
 function avatarview() {
