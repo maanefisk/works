@@ -653,6 +653,10 @@ html[data-theme=dark] {
   box-sizing: border-box;
   display: flex;
 }
+.illucontent .divider h1 {
+  font-size: 4em;
+  margin: 0;
+}
 .illucontent .divider .withborder {
   border: 2px dashed var(--primarycolor);
   box-sizing: border-box;
@@ -678,15 +682,16 @@ html[data-theme=dark] {
 .illucontent .divider.section1 .images .imagecontainer .single {
   max-height: 100%;
   min-width: 100%;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .illucontent .divider.section1 .images .imagecontainer .single:hover {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+  cursor: crosshair;
 }
 .illucontent .divider.section2 {
-  flex-direction: column;
   background: var(--color10);
 }
 .illucontent .divider.section2 .explanation {
@@ -700,11 +705,13 @@ html[data-theme=dark] {
   border-color: #FFFFFF;
 }
 .illucontent .divider.section2 .images {
-  width: 100%;
+  flex-direction: column;
 }
-.illucontent .divider.section2 .images .single {
-  max-width: 100%;
-  height: auto;
+.illucontent .divider.section2 .images .imagecontainer {
+  height: 70vh;
+}
+.illucontent .divider.section2 .images .imagecontainer:hover {
+  height: 90vh;
 }
 
 @media (max-width: 1400px) {
@@ -720,6 +727,24 @@ html[data-theme=dark] {
 @media (max-width: 767px) {
   .illucontent .divider {
     padding: 3vw 3vw 4vw;
+  }
+  .illucontent .divider.section1 .images {
+    flex-direction: column;
+  }
+  .illucontent .divider.section1 .images .imagecontainer {
+    height: unset;
+  }
+  .illucontent .divider.section1 .images .imagecontainer .single {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .illucontent .divider.section1 .images .imagecontainer .single:hover {
+    -o-object-fit: contain;
+       object-fit: contain;
+    cursor: unset;
+  }
+  .illucontent .divider.section1 .images .imagecontainer:hover {
+    height: unset;
   }
 }
 @media (max-width: 480px) {

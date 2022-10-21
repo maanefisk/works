@@ -408,24 +408,21 @@ function illustrationview() {
       <div class="explanation">
           <h2>Digital tegning</h2>
       <p>
-          ...
+          Klikk eller ta musepeker over for å se full størrelse.
       </p>
       </div>
       <div class="images">
         <div class="imagecontainer"><img class="single" src="./images/illustration/5.png" alt="Vannvesen illustrasjon"></div>
         <div class="imagecontainer"><img class="single" src="./images/illustration/Ilder.png" alt="Ilder illustrasjon"></div>
-          <div class="explanation withborder">
-              <p>
-                  Noen ganger har kundene bilder fra før, og andre ganger krever det litt kreativitet.
-                  <br>
-                  (Som i eksemplet over. Hos bua lagde jeg en grafikk i menyen for å bryte med blokk-fargene, hos Østerbo
-                  videregående skole ville jeg lage en banner som var litt trendbasert og hos Krimek eller KM lage litt grafikk
-                  som matchet retropreget i logoen dems.)
-              </p>
-          </div>
           <div class="imagecontainer"><img class="single" src="./images/illustration/inthecontrolpanel.jpg" alt="Meditasjon illustrasjon"></div>
           <div class="imagecontainer"><img class="single" src="./images/illustration/IdreamtIdweltinmarbleHalls.jpg" alt="Healing illustrasjon"></div>
           <div class="imagecontainer"><img class="single" src="./images/illustration/Uten navn-1.png" alt="Ying og yang illustrasjon"></div>
+          <div class="explanation withborder">
+              <p>
+                  Jeg liker godt å tegne på tegnebrett, rett i photoshop. <br>
+                  Når jeg tegner personlig liker jeg å la meg inspirere av fantasyverdenen, formidle følelser, meditasjon og spirituelle følelser.
+              </p>
+          </div>
           <div class="imagecontainer"><img class="single" src="./images/illustration/drage2.png" alt="Drage illustrasjon"></div>
           <div class="imagecontainer"><img class="single" src="./images/illustration/This_cave_is_full_of_love_nnaana_lucia2.png" alt="Romvesen illustrasjon"></div>
           <div class="imagecontainer"><img class="single" src="./images/illustration/frekvensian.jpg" alt="Natttegning illustrasjon"></div>
@@ -434,12 +431,12 @@ function illustrationview() {
           <div class="imagecontainer"><img class="single" src="./images/illustration/Spirit.png" alt="Englevakt illustrasjon"></div>
           <div class="explanation withborder">
           <p>
-          Å jobbe med kundetilpasninger har vært en stor glede! Så moro når kunden kommer tilbake og forteller de er fornøyd!
+            Tegninger fra natten.
           </p>
           </div>
       </div>
   </div>
-  <div class="divider section2">
+  <div class="divider section1 section2">
       <div class="explanation">
           <h2 class="child">3D</h2>
           <p class="child">
@@ -447,8 +444,8 @@ function illustrationview() {
           </p>
       </div>
       <div class="images">
-          <img class="single" src="./images/illustration/Diorama_Poster2.png" alt="Diorma 3D figur">
-          <img class="single" src="./images/illustration/ForeverDolphinLove.png" alt="Delfin 3D figur">
+            <div class="imagecontainer"><img class="single" src="./images/illustration/Diorama_Poster2.png" alt="Diorma 3D figur"></div>
+            <div class="imagecontainer"><img class="single" src="./images/illustration/ForeverDolphinLove.png" alt="Delfin 3D figur"></div>
       </div>
   </div>
 </div>
