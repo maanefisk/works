@@ -454,7 +454,7 @@ function illustrationview() {
 }
 function avatarview() {
   document.getElementById("content").innerHTML = `
-      <div>Avatar</div>
+    <div>Avatar</div>
       `;
 }
 function feedmeview() {
