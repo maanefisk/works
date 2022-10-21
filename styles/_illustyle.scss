@@ -1,0 +1,98 @@
+.illucontent {
+    & .divider {
+        width: 100%;
+        padding: 3vw 13vw 4vw;
+        box-sizing: border-box;
+        display: flex;
+
+        & .withborder {
+            border: 2px dashed var(--primarycolor);
+            box-sizing: border-box;
+            padding: 0 0.5em;
+            margin: 1em 0;
+        }
+
+        &.section1 {
+            flex-direction: column;
+            background: var(--color9);
+
+            & .explanation {
+                width: 100%;
+            }
+            & .images {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+
+                & .imagecontainer {
+                    height: 50vh;
+                    flex-grow: 1;
+
+                    & .single {
+                        max-height: 100%;
+                        min-width: 100%;
+                        object-fit: cover;
+
+                        &:hover {
+                            object-fit: scale-down;
+                        }
+                    }
+                }
+            }
+        }
+        &.section2 {
+            flex-direction: column;
+            background: var(--color10);
+            
+            & .explanation {
+                width: 100%;
+
+                & .child {
+                    color: #FFFFFF;
+                    border-color: #FFFFFF;
+                }
+                &.withborder {
+                    border-color: #FFFFFF;
+                }
+                
+            }
+            & .images {
+                width: 100%;
+
+                & .single {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .illucontent {
+        & .divider {
+            padding: 3vw 8vw 4vw;
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .illucontent {
+        & .divider {
+            padding: 3vw 5vw 4vw;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .illucontent {
+        & .divider {
+            padding: 3vw 3vw 4vw;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .illucontent {
+        & .divider {
+            padding: 3vw 3vw 4vw;
+        }
+    }
+}

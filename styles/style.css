@@ -242,6 +242,11 @@ html[data-theme=dark] {
   display: flex;
 }
 
+.isactive {
+  color: var(--secondarycolor) !important;
+  transform: scale(1.1);
+}
+
 .cvcontent {
   padding: 0 21vw 0;
 }
@@ -639,6 +644,86 @@ html[data-theme=dark] {
 }
 @media (max-width: 480px) {
   .anicontent .divide {
+    padding: 3vw 3vw 4vw;
+  }
+}
+.illucontent .divider {
+  width: 100%;
+  padding: 3vw 13vw 4vw;
+  box-sizing: border-box;
+  display: flex;
+}
+.illucontent .divider .withborder {
+  border: 2px dashed var(--primarycolor);
+  box-sizing: border-box;
+  padding: 0 0.5em;
+  margin: 1em 0;
+}
+.illucontent .divider.section1 {
+  flex-direction: column;
+  background: var(--color9);
+}
+.illucontent .divider.section1 .explanation {
+  width: 100%;
+}
+.illucontent .divider.section1 .images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.illucontent .divider.section1 .images .imagecontainer {
+  height: 50vh;
+  flex-grow: 1;
+}
+.illucontent .divider.section1 .images .imagecontainer .single {
+  max-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.illucontent .divider.section1 .images .imagecontainer .single:hover {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.illucontent .divider.section2 {
+  flex-direction: column;
+  background: var(--color10);
+}
+.illucontent .divider.section2 .explanation {
+  width: 100%;
+}
+.illucontent .divider.section2 .explanation .child {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.illucontent .divider.section2 .explanation.withborder {
+  border-color: #FFFFFF;
+}
+.illucontent .divider.section2 .images {
+  width: 100%;
+}
+.illucontent .divider.section2 .images .single {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1400px) {
+  .illucontent .divider {
+    padding: 3vw 8vw 4vw;
+  }
+}
+@media (max-width: 1280px) {
+  .illucontent .divider {
+    padding: 3vw 5vw 4vw;
+  }
+}
+@media (max-width: 767px) {
+  .illucontent .divider {
+    padding: 3vw 3vw 4vw;
+  }
+}
+@media (max-width: 480px) {
+  .illucontent .divider {
     padding: 3vw 3vw 4vw;
   }
 }

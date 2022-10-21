@@ -18,7 +18,15 @@ let trans = () => {
 };
 
 function changepage(theclicked) {
+  let alltabsactive = document.querySelectorAll(".isactive");
+  for (let tabactive of alltabsactive) {
+    tabactive.classList.remove("isactive");
+  }
+
+  theclicked.classList.add("isactive");
+
   var pagename = theclicked.innerText;
   model.page = pagename;
+
   updateView();
 }

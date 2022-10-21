@@ -402,7 +402,7 @@ function animationview() {
 }
 function illustrationview() {
   document.getElementById("content").innerHTML = `
-  <div class="innercontent designcontent">
+  <div class="innercontent illucontent">
   <div class="divider section1">
     <h1>Illustrasjon</h1>
       <div class="explanation">
@@ -412,8 +412,8 @@ function illustrationview() {
       </p>
       </div>
       <div class="images">
-          <img class="single" src="./images/illustration/5.png" alt="Vannvesen illustrasjon">
-          <img class="single" src="./images/illustration/Ilder.png" alt="Ilder illustrasjon">
+        <div class="imagecontainer"><img class="single" src="./images/illustration/5.png" alt="Vannvesen illustrasjon"></div>
+        <div class="imagecontainer"><img class="single" src="./images/illustration/Ilder.png" alt="Ilder illustrasjon"></div>
           <div class="explanation withborder">
               <p>
                   Noen ganger har kundene bilder fra før, og andre ganger krever det litt kreativitet.
@@ -423,15 +423,15 @@ function illustrationview() {
                   som matchet retropreget i logoen dems.)
               </p>
           </div>
-          <img class="single" src="./images/illustration/inthecontrolpanel.jpg" alt="Meditasjon illustrasjon">
-          <img class="single" src="./images/illustration/IdreamtIdweltinmarbleHalls.jpg" alt="Healing illustrasjon">
-          <img class="single" src="./images/illustration/Uten navn-1.png" alt="Ying og yang illustrasjon">
-          <img class="single" src="./images/illustration/drage2.png" alt="Drage illustrasjon">
-          <img class="single" src="./images/illustration/This_cave_is_full_of_love_nnaana_lucia2.png" alt="Romvesen illustrasjon">
-          <img class="single" src="./images/illustration/frekvensian.jpg" alt="Natttegning illustrasjon">
-          <img class="single" src="./images/illustration/Speedy_raven_sensei.jpg" alt="Ravnerobot illustrasjon">
-          <img class="single" src="./images/illustration/Speedy_Robogurl_50000.jpg" alt="Robot alien illustrasjon">
-          <img class="single" src="./images/illustration/Spirit.png" alt="Englevakt illustrasjon">
+          <div class="imagecontainer"><img class="single" src="./images/illustration/inthecontrolpanel.jpg" alt="Meditasjon illustrasjon"></div>
+          <div class="imagecontainer"><img class="single" src="./images/illustration/IdreamtIdweltinmarbleHalls.jpg" alt="Healing illustrasjon"></div>
+          <div class="imagecontainer"><img class="single" src="./images/illustration/Uten navn-1.png" alt="Ying og yang illustrasjon"></div>
+          <div class="imagecontainer"><img class="single" src="./images/illustration/drage2.png" alt="Drage illustrasjon"></div>
+          <div class="imagecontainer"><img class="single" src="./images/illustration/This_cave_is_full_of_love_nnaana_lucia2.png" alt="Romvesen illustrasjon"></div>
+          <div class="imagecontainer"><img class="single" src="./images/illustration/frekvensian.jpg" alt="Natttegning illustrasjon"></div>
+          <div class="imagecontainer"><img class="single" src="./images/illustration/Speedy_raven_sensei.jpg" alt="Ravnerobot illustrasjon"></div>
+          <div class="imagecontainer"><img class="single" src="./images/illustration/Speedy_Robogurl_50000.jpg" alt="Robot alien illustrasjon"></div>
+          <div class="imagecontainer"><img class="single" src="./images/illustration/Spirit.png" alt="Englevakt illustrasjon"></div>
           <div class="explanation withborder">
           <p>
           Å jobbe med kundetilpasninger har vært en stor glede! Så moro når kunden kommer tilbake og forteller de er fornøyd!
