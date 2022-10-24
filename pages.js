@@ -71,7 +71,7 @@ function cvview() {
           css redesign av crm-system, css redesign av HMS-kurs, lage grafikk, vektorbasert grafikk,
           illustrasjoner, animasjon, designe stand, reklameskilt, flyers, brukerveiledninger, designe apper,
           utvikle design til en nettside, har også jobbet med javascript, jQuery, bootstrap, php, litt ajax og bittelitt SQL. </p>
-      <a>Se design her</a>
+      
       <br>
       <br>
       <b>Juli 2019 - Mars 2020</b>
