@@ -464,7 +464,7 @@ html[data-theme=dark] {
 }
 .graphiccontent .divider.section1 {
   flex-direction: column;
-  background: var(--primarybg) url("./images/graphics/colorbackground.svg");
+  background: var(--primarybg) url("../images/graphics/colorbackground.svg");
   background-size: cover;
 }
 .graphiccontent .divider.section1 .explanation {
@@ -822,4 +822,22 @@ html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
 }/*# sourceMappingURL=style.css.map */
