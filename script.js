@@ -27,6 +27,7 @@ function changepage(theclicked) {
 
   var pagename = theclicked.innerText;
   model.page = pagename;
+  localStorage.setItem("model", pagename);
 
   updateView();
 }

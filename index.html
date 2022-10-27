@@ -63,6 +63,11 @@
                 left: 0
             });
         }
+        window.onload = function() {
+            var activepage = localStorage.getItem("model");
+            model.page = activepage;
+            updateView();
+        }
         </script>
     </body>
 </html>
