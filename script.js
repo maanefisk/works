@@ -27,6 +27,9 @@ function changepage(theclicked) {
 
   var pagename = theclicked.innerText;
   model.page = pagename;
+  if (model.page == "Lag en avatar") {
+    pagename = "CV";
+  }
   localStorage.setItem("model", pagename);
 
   updateView();
