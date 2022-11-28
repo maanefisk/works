@@ -158,7 +158,7 @@ html[data-theme=dark] {
 .header .superheader {
   font-size: clamp(2.5rem, -0.875rem + 8.333vw, 3.5rem);
   font-weight: 600;
-  color: var(--secondarycolor);
+  color: var(--color3);
 }
 .header .supersubheader {
   font-size: clamp(0.96rem, -0.336rem + 3.205vw, 1.34rem);
@@ -249,6 +249,9 @@ html[data-theme=dark] {
 
 .cvcontent {
   padding: 0 21vw 0;
+  background-image: url(/images/giraffedots.svg) !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
 }
 .cvcontent .personalia {
   background: var(--color3);

@@ -1,5 +1,8 @@
 .cvcontent {
     padding: 0 21vw 0;
+    background-image: url(/images/giraffedots.svg) !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
 
     & .personalia {
         background: var(--color3);
